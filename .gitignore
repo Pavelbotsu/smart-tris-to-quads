@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+dist/
+.venv/
+*.blend1
+tests/*.png
+tests/*.stl

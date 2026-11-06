@@ -1,0 +1,16 @@
+{
+    // Autocomplete for bpy / bmesh / mathutils comes from "fake-bpy-module"
+    // (pip install -r requirements-dev.txt). Nothing here changes how Blender runs the add-on.
+    "python.analysis.extraPaths": ["${workspaceFolder}", "${workspaceFolder}/tests"],
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportInvalidTypeForm": "none"
+    },
+    "editor.rulers": [100],
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    // Blender Development extension: the folder that holds the add-on
+    "blender.addonFolders": ["${workspaceFolder}/smart_tris_to_quads"],
+    "blender.addon.reloadOnSave": true
+}

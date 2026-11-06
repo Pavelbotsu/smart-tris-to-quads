@@ -1,0 +1,9 @@
+# Editor autocomplete only (fake stubs of Blender's API):
+fake-bpy-module-latest
+
+# Optional: run the add-on and tests outside Blender (Blender as a Python module).
+# Needs a matching Python version, e.g. bpy 4.2 -> Python 3.11, bpy 5.x -> Python 3.13.
+# bpy
+# numpy
+# matplotlib     # pictures in tests/plot.py, tests/fig3d.py
+# build123d      # tests/make_cad_parts.py (CAD test models)

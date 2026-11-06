@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build add-on zip",
+            "type": "shell",
+            "command": "python",
+            "args": ["tools/build.py"],
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: install zip + run in Blender (needs bpy)",
+            "type": "shell",
+            "command": "python",
+            "args": ["tests/test_addon_install.py"],
+            "dependsOn": "Build add-on zip",
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: Full Quad on all test meshes (needs bpy)",
+            "type": "shell",
+            "command": "python",
+            "args": ["test_full.py"],
+            "options": { "cwd": "${workspaceFolder}/tests" },
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: compare with stock Alt+J (needs bpy)",
+            "type": "shell",
+            "command": "python",
+            "args": ["regress.py"],
+            "options": { "cwd": "${workspaceFolder}/tests" },
+            "problemMatcher": []
+        }
+    ]
+}
