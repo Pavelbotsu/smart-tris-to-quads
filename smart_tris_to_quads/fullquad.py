@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 """Full Quad: turn whatever is left after the tris->quads pass (triangles,
 n-gons) into quads only, without moving any original vertex.
 

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 """Smart Tris to Quads - a smarter Alt+J for triangulated (STL) meshes.
 
 Modules
@@ -17,6 +19,8 @@ bl_info = {
     "location": "View3D > Sidebar > Tris2Quads | Edit Mode: Face menu, Shift+Alt+J",
     "description": "Tris to quads that follows the real grid and carries rows straight "
                    "across bevels, plus a Full Quad mode that adds points to leave only quads",
+    "doc_url": "https://github.com/Pavelbotsu/smart-tris-to-quads",
+    "tracker_url": "https://github.com/Pavelbotsu/smart-tris-to-quads/issues",
     "category": "Mesh",
 }
 

@@ -1,0 +1,36 @@
+# Push a tag like v4.1.0 -> builds the add-on zip and publishes a GitHub Release with it.
+#   git tag v4.1.0 && git push origin v4.1.0
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check tag matches add-on version
+        run: python tools/build.py --check-tag "${GITHUB_REF_NAME}"
+
+      - name: Build zip
+        run: python tools/build.py
+
+      - name: Release notes from CHANGELOG.md
+        run: python tools/build.py --notes > release-notes.md
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Smart Tris to Quads ${{ github.ref_name }}
+          body_path: release-notes.md
+          files: dist/*.zip

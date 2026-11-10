@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 """Rebuild bevel strips so the rows of the neighbouring faces carry straight on
 across them (what the user draws by hand).
 

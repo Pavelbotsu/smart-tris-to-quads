@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 """Rebuild flat areas.
 
 CAD exporters cover a flat face with a handful of huge sliver triangles that

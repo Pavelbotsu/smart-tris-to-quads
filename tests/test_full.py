@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 import sys, time, math
 import bpy  # noqa
 import bmesh

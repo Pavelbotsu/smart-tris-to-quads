@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 """End-to-end check: install the built zip in Blender (pip `bpy` module or
 `blender -b --python`), run the operator in Object and Edit Mode, Full Quad,
 and check the shape is unchanged.

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 """Blender UI: operator, sidebar panel, Face-menu entry, preferences, shortcut."""
 import math
 

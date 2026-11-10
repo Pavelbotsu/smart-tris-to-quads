@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 """Grid-aware tris -> quads (the engine of the add-on).
 
 Why stock Alt+J goes wrong

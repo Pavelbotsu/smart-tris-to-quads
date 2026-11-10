@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 """Synthetic test meshes that imitate triangulated STL exports of
 hard-surface / CAD models: curved face patches meshed as structured grids,
 narrow bevel/fillet strips, strips meeting at T-junctions, and density

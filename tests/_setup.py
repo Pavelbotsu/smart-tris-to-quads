@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 """Make the add-on package importable from the tests (outside Blender, with the
 `bpy` pip module) and expose its modules under short names."""
 import os

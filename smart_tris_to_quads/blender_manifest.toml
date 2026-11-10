@@ -1,0 +1,25 @@
+schema_version = "1.0.0"
+
+# Blender 4.2+ reads this file (extensions). Blender 3.6 - 4.1 read bl_info in __init__.py.
+# Keep "version" equal to bl_info["version"]: tools/build.py refuses to build otherwise.
+id = "smart_tris_to_quads"
+version = "4.1.0"
+name = "Smart Tris to Quads"
+tagline = "Grid-aware tris to quads for CAD and STL meshes"
+maintainer = "Pavlo Botsula"
+type = "add-on"
+
+website = "https://github.com/Pavelbotsu/smart-tris-to-quads"
+
+tags = ["Mesh", "Modeling"]
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+copyright = ["2026 Pavlo Botsula"]
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "*.pyc",
+]

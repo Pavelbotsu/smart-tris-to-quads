@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pavlo Botsula
 """Second test set: real quad models built with Blender's own tools (bevelled
 box, bevelled cylinder with an inset), triangulated the way STL exporters do,
 then converted back. Ground truth = the original quads."""
