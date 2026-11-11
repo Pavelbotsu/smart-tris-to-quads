@@ -2,7 +2,7 @@
 
 A smarter **Alt+J** for triangulated meshes (STL from CAD or other tools), as a Blender add-on.
 
-<!-- TODO: before/after GIF here, e.g. ![Stock Alt+J vs Smart Tris to Quads](docs/images/before-after.gif) -->
+![Original STL, Blender Alt+J, Smart Tris to Quads and Full Quad on a car door](docs/images/comparison.png)
 
 - **Smart Tris to Quads**: pairs triangles along the real grid, so edge loops follow the surface
   instead of zig-zagging. It also carries face rows straight across dense bevels, and redraws flat
@@ -11,6 +11,23 @@ A smarter **Alt+J** for triangulated meshes (STL from CAD or other tools), as a 
   Original vertices never move, and new points sit exactly on the original surface.
 
 Works in Blender 3.6 to 5.x (tested in 4.2 and 5.2).
+
+<details>
+<summary><b>Bigger pictures</b> (car door from a CAD STL export)</summary>
+
+**Original**: the triangulated STL.
+![Original triangulated STL](docs/images/1-original.png)
+
+**Blender Alt+J**: diagonals zig-zag, edge loops break up.
+![Blender Alt+J result](docs/images/2-alt-j.png)
+
+**Smart Tris to Quads**: edge loops follow the surface and run straight through the bevels.
+![Smart Tris to Quads result](docs/images/3-smart.png)
+
+**Full Quad**: only quads remain; the original vertices did not move.
+![Full Quad result](docs/images/4-full-quad.png)
+
+</details>
 
 ## Install
 
